@@ -627,6 +627,7 @@ button:focus {
 
 /* single content item */
 .content__item {
+  font-family: 'Thongterm', 'Athiti', 'Trirong', sans-serif !important;  
   position: absolute;
   top: 0;
   width: 100%;
@@ -1030,4 +1031,33 @@ button:focus {
 
 .hidden {
   display: none !important;
+}
+
+.readMoreBtn {
+  width: 120px;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: rgb(250, 172, 33);
+  color: rgb(255, 255, 255);
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s, border-color 0.1s ease-in-out 0s;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(250, 172, 33);
+  border-image: initial;
+}
+
+.readMoreBtn:hover {
+  background-color: rgb(239, 165, 33);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(239, 165, 33);
+  border-image: initial;
+}
+
+.txtCenter {
+  text-align: center;
 }

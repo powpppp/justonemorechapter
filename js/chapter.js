@@ -14,7 +14,7 @@ var books = [
         type: 'กำลังภายใน',
         images: 'x1.jpg',
         chapters: 143,
-        folder: 'a/1/',
+        folder: 'a/2/',
         status: 'Complete',
         by: 'เอ่อร์เกิน (耳根)',
         main: true
@@ -24,7 +24,7 @@ var books = [
         type: 'กำลังภายใน',
         images: 'x1.jpg',
         chapters: 52,
-        folder: 'a/1/',
+        folder: 'a/3',
         status: 'Complete',
         by: 'เอ่อร์เกิน (耳根)',
         main: true
@@ -34,7 +34,7 @@ var books = [
         type: 'กำลังภายใน',
         images: 'x1.jpg',
         chapters: 185,
-        folder: 'a/1/',
+        folder: 'a/4/',
         status: 'Complete',
         by: 'เอ่อร์เกิน (耳根)',
         main: true
@@ -44,7 +44,7 @@ var books = [
         type: 'กำลังภายใน',
         images: 'x1.jpg',
         chapters: 36,
-        folder: 'a/1/',
+        folder: 'a/5/',
         status: 'On going',
         by: 'เอ่อร์เกิน (耳根)',
         main: true
@@ -53,7 +53,8 @@ var books = [
         name: 'King of Gods ราชันเทพเจ้า ภาค 1',
         type: 'กำลังภายใน',
         images: 'x2.jpg',
-        chapters: 185,
+        folder: 'b/1/',
+        chapters: 184,
         status: 'Complete',
         by: '主宰之王 (Zhu Zai Zhi Wang)',
         main: true
@@ -62,7 +63,8 @@ var books = [
         name: 'King of Gods ราชันเทพเจ้า ภาค 2',
         type: 'กำลังภายใน',
         images: 'x2.jpg',
-        chapters: 185,
+        folder: 'b/2/',
+        chapters: 37,
         status: 'Complete',
         by: '主宰之王 (Zhu Zai Zhi Wang)',
         main: true
@@ -71,7 +73,8 @@ var books = [
         name: 'King of Gods ราชันเทพเจ้า ภาค 3',
         type: 'กำลังภายใน',
         images: 'x2.jpg',
-        chapters: 185,
+        chapters: 220,
+        folder: 'b/3/',
         status: 'Complete',
         by: '主宰之王 (Zhu Zai Zhi Wang)',
         main: true
@@ -80,7 +83,8 @@ var books = [
         name: 'King of Gods ราชันเทพเจ้า ภาค 4',
         type: 'กำลังภายใน',
         images: 'x2.jpg',
-        chapters: 185,
+        chapters: 119,
+        folder: 'b/4/',
         status: 'Complete',
         by: '主宰之王 (Zhu Zai Zhi Wang)',
         main: true
@@ -89,17 +93,9 @@ var books = [
         name: 'King of Gods ราชันเทพเจ้า ภาค 5',
         type: 'กำลังภายใน',
         images: 'x2.jpg',
-        chapters: 185,
-        status: 'Complete',
-        by: '主宰之王 (Zhu Zai Zhi Wang)',
-        main: true
-    },
-    {
-        name: 'King of Gods ราชันเทพเจ้า ภาค 6',
-        type: 'กำลังภายใน',
-        images: 'x2.jpg',
-        chapters: 185,
-        status: 'Complete',
+        folder: 'b/5/',
+        chapters: 169,
+        status: 'On going',
         by: '主宰之王 (Zhu Zai Zhi Wang)',
         main: true
     }

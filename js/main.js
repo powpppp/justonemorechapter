@@ -153,9 +153,15 @@
 						dataContent.appendChild(p);
 					}
 					if (ep < item.info.chapters) {
+						var div = document.createElement("div");
+						div.className = "txtCenter";
 						var nxtBtn = document.createElement("button");
 						nxtBtn.innerHTML = "Next";
-						dataContent.appendChild(nxtBtn);
+						nxtBtn.addEventListener('click', function () {
+							loadEP(item, ep+1);
+						});
+						div.appendChild(nxtBtn);
+						dataContent.appendChild(div);
 					}
 				}
 			}
