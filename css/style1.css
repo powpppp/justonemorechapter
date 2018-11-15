@@ -635,7 +635,7 @@ button:focus {
   opacity: 0;
   padding: 60px 60px 80px 60px;
   pointer-events: none;
-  font-size: 0.85em;
+  font-size: 18px;
 }
 .content__item p {
   max-width: 1200px;
