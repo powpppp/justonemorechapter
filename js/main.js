@@ -129,6 +129,39 @@
 		// });
 	}
 
+	function loadEP(item, ep) {
+		Appcontext.emptyNode(dataContent);
+		Appcontext.showLoading();
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', './data/' + item.info.folder + ep + '.md', true);
+
+		xhr.onload = function () {
+			Appcontext.hideLoading();
+			if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+				var response = xhr.responseText;
+				if (response) {
+					var all = response.split("\n");
+					var title = all.pop();
+					contentMainTitle.innerHTML = item.info.name;
+					contentMainTitle.innerHTML = title.replace("##", "");
+					for (var i = 0; i < all.length; i++) {
+						var p = document.createElement("p");
+						if (all[i].includes("[Go To Next Chapter]")) continue;
+						p.innerHTML = all[i];
+						dataContent.appendChild(p);
+					}
+					if (ep < item.info.chapters) {
+						var nxtBtn = document.createElement("button");
+						nxtBtn.innerHTML = "Next";
+						dataContent.appendChild(nxtBtn);
+					}
+				}
+			}
+		};
+
+		xhr.send(null);
+	}
+
 	function loadContent(item, ep) {
 		// add expanding element/placeholder
 		var dummy = document.createElement('div');
@@ -145,49 +178,16 @@
 			contentAuthor.innerHTML = item.info.by;
 		}
 		Appcontext.emptyNode(dataContent);
-		if (!ep) {
-			for (var i = 1; i <= item.info.chapters; i++) {
-				var p = document.createElement("p");
-				p.className = "chapter";
-				p.ep = i;
-				p.innerHTML = "Chapter " + i;
-				p.addEventListener('click', function () {
-					loadContent(item, this.ep);
-				});
-				dataContent.appendChild(p);
-			}
-		} else {
-			Appcontext.showLoading();
-			var xhr = new XMLHttpRequest();
-			xhr.open('GET', './data/' + item.info.folder + ep + '.md', true);
-
-			xhr.onload = function () {
-				Appcontext.hideLoading();
-				if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
-					var response = xhr.responseText;
-					if (response) {
-						var all = response.split("\n");
-						var title = all.pop();
-						contentMainTitle.innerHTML = item.info.name;
-						contentMainTitle.innerHTML = title.replace("##", "");
-						for (var i = 0; i < all.length; i++) {
-							var p = document.createElement("p");
-							if (all[i].includes("[Go To Next Chapter]")) continue;
-							p.innerHTML = all[i];
-							dataContent.appendChild(p);
-						}
-						if (ep < item.info.chapters) {
-							var nxtBtn = document.createElement("button");
-							nxtBtn.innerHTML = "Next";
-							dataContent.appendChild(nxtBtn);
-						}
-					}
-				}
-			};
-
-			xhr.send(null);
+		for (var i = 1; i <= item.info.chapters; i++) {
+			var p = document.createElement("p");
+			p.className = "chapter";
+			p.ep = i;
+			p.innerHTML = "Chapter " + i;
+			p.addEventListener('click', function () {
+				loadEP(item, this.ep);
+			});
+			dataContent.appendChild(p);
 		}
-
 
 		dummy.className = 'placeholder';
 
