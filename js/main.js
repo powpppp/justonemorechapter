@@ -176,6 +176,11 @@
 							p.innerHTML = all[i];
 							dataContent.appendChild(p);
 						}
+						if (ep < item.info.chapters) {
+							var nxtBtn = document.createElement("button");
+							nxtBtn.innerHTML = "Next";
+							dataContent.appendChild(nxtBtn);
+						}
 					}
 				}
 			};
