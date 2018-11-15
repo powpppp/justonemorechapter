@@ -484,6 +484,10 @@ button:focus {
   color: #aaa;
 }
 
+.meta__date {
+  color: #81c483 !important;
+}
+
 .meta__reading-time {
   text-align: right;
   float: right;
