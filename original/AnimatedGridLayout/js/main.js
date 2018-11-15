@@ -32,7 +32,7 @@
 			}
 		},
 		gridEl = document.getElementById('theGrid'),
-		// sidebarEl = document.getElementById('theSidebar'),
+		sidebarEl = document.getElementById('theSidebar'),
 		gridItemsContainer = gridEl.querySelector('section.grid'),
 		contentItemsContainer = gridEl.querySelector('section.content'),
 		gridItems = gridItemsContainer.querySelectorAll('.grid__item'),
@@ -41,8 +41,8 @@
 		current = -1,
 		lockScroll = false, xscroll, yscroll,
 		isAnimating = false,
-		menuCtrl = document.getElementById('menu-toggle');
-		// menuCloseCtrl = sidebarEl.querySelector('.close-button');
+		menuCtrl = document.getElementById('menu-toggle'),
+		menuCloseCtrl = sidebarEl.querySelector('.close-button');
 
 	/**
 	 * gets the viewport width and height
@@ -109,15 +109,15 @@
 
 		// hamburger menu button (mobile) and close cross
 		menuCtrl.addEventListener('click', function() {
-			// if( !classie.has(sidebarEl, 'sidebar--open') ) {
-			// 	classie.add(sidebarEl, 'sidebar--open');	
-			// }
+			if( !classie.has(sidebarEl, 'sidebar--open') ) {
+				classie.add(sidebarEl, 'sidebar--open');	
+			}
 		});
 
 		menuCloseCtrl.addEventListener('click', function() {
-			// if( classie.has(sidebarEl, 'sidebar--open') ) {
-			// 	classie.remove(sidebarEl, 'sidebar--open');
-			// }
+			if( classie.has(sidebarEl, 'sidebar--open') ) {
+				classie.remove(sidebarEl, 'sidebar--open');
+			}
 		});
 	}
 
@@ -209,45 +209,3 @@
 	init();
 
 })();
-
-Appcontext = {}
-
-Appcontext.init = function () {
-  Appcontext._loading = document.getElementById('loading');
-}
-
-Appcontext.showLoading = function () {
-  Appcontext._loading && Appcontext.removeClass(Appcontext._loading, 'hidden');
-}
-
-Appcontext.hideLoading = function () {
-  Appcontext._loading && Appcontext.addClass(Appcontext._loading, 'hidden');
-}
-
-Appcontext.hasClass = function (ele, cls) {
-  return !!ele.className.match(new RegExp('(\\s|^)' + cls + '(\\s|$)'));
-}
-
-Appcontext.addClass = function (ele, cls) {
-  if (!Appcontext.hasClass(ele, cls)) ele.className += (' ' + cls);
-}
-
-Appcontext.removeClass = function (ele, cls) {
-  if (Appcontext.hasClass(ele, cls)) {
-    var reg = new RegExp('(\\s|^)' + cls + '(\\s|$)');
-    ele.className = ele.className.replace(reg, ' ');
-  }
-}
-
-Appcontext.emptyNode = function (node) {
-  if ('innerHTML' in node) {
-    try {
-      node.innerHTML = ''; return;
-    } catch (e) { }
-  }
-  for (var c; c = node.lastChild;) {
-    node.removeChild(c);
-  }
-}
-
-Appcontext.init();
