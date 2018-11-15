@@ -141,10 +141,12 @@
 				var response = xhr.responseText;
 				if (response) {
 					var all = response.split("\n");
-					var title = all.pop();
 					contentMainTitle.innerHTML = item.info.name;
-					contentMainTitle.innerHTML = title.replace("##", "");
 					for (var i = 0; i < all.length; i++) {
+						if (i==0) {
+							contentTitle.innerHTML = all[i].replace("##", "");
+							continue;
+						}
 						var p = document.createElement("p");
 						if (all[i].includes("[Go To Next Chapter]")) continue;
 						p.innerHTML = all[i];
