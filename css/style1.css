@@ -1061,3 +1061,17 @@ button:focus {
 .txtCenter {
   text-align: center;
 }
+
+.txtRead {
+  text-indent: 50px;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 0px;
+  margin-block-end: 1em;
+  display: block;
+  overflow-wrap: break-word;
+  line-height: 2.4;
+  font-size: 18px;
+  font-family: Thongterm;
+  color: rgb(13, 13, 13);
+}
