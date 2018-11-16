@@ -6,6 +6,13 @@
   src: url("../fonts/codropsicons/codropsicons.eot");
   src: url("../fonts/codropsicons/codropsicons.eot?#iefix") format("embedded-opentype"), url("../fonts/codropsicons/codropsicons.woff") format("woff"), url("../fonts/codropsicons/codropsicons.ttf") format("truetype"), url("../fonts/codropsicons/codropsicons.svg#codropsicons") format("svg");
 }
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: 'Thongterm';
+  src: url("fonts/thongterm/thongterm_light.woff") format("woff"), url("fonts/thongterm/thongterm_light.ttf") format("truetype");
+}
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
