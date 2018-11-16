@@ -1072,6 +1072,6 @@ button:focus {
   overflow-wrap: break-word;
   line-height: 2.4;
   font-size: 18px;
-  font-family: Thongterm;
+  font-family: Thongterm !important;
   color: rgb(13, 13, 13);
 }
