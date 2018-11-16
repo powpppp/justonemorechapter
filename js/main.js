@@ -143,13 +143,14 @@
 					var all = response.split("\n");
 					contentMainTitle.innerHTML = item.info.name;
 					for (var i = 0; i < all.length; i++) {
-						if (i==0) {
+						if (i == 0) {
 							contentTitle.innerHTML = all[i].replace("##", "");
 							continue;
 						}
 						var p = document.createElement("p");
 						if (all[i].includes("[Go To Next Chapter]")) continue;
 						p.innerHTML = all[i];
+						p.className = "txtRead";
 						dataContent.appendChild(p);
 					}
 					if (ep < item.info.chapters) {
@@ -159,7 +160,7 @@
 						nxtBtn.className = "readMoreBtn";
 						nxtBtn.innerHTML = "Next";
 						nxtBtn.addEventListener('click', function () {
-							loadEP(item, ep+1);
+							loadEP(item, ep + 1);
 						});
 						div.appendChild(nxtBtn);
 						dataContent.appendChild(div);
