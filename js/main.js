@@ -131,6 +131,7 @@
 	}
 
 	function loadEP(item, ep) {
+		ga('send', 'event', [item.name], ['read'], [ep], [1], []);
 		Appcontext.emptyNode(dataContent);
 		Appcontext.showLoading();
 		var xhr = new XMLHttpRequest();
