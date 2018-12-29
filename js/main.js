@@ -47,6 +47,7 @@
 	contentMainTitle = document.getElementById("contentMainTitle");
 	contentAuthor = document.getElementById("contentAuthor");
 	dataContent = document.getElementById("dataContent");
+	contentPrice = document.getElementById("contentPrice");
 
 
 
@@ -187,6 +188,10 @@
 		if (contentAuthor) {
 			contentAuthor.innerHTML = item.info.by;
 		}
+		if (contentPrice) {
+			contentPrice.innerHTML = item.info.price;
+		}
+		
 		Appcontext.emptyNode(dataContent);
 		for (var i = 1; i <= item.info.chapters; i++) {
 			var p = document.createElement("p");

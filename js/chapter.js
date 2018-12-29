@@ -1,5 +1,6 @@
 var books = [
     {
+        price: 'Free',
         name: 'ผนึกสวรรค์ สยบมาร สะท้านเทพ ภาค 1 - ปรมาจารย์เอกะเทวะ',
         type: 'กำลังภายใน',
         images: 'c1.jpg',
@@ -7,11 +8,11 @@ var books = [
         chapters: 95,
         status: 'Complete',
         by: 'เอ่อร์เกิน (耳根)',
-        price: 'Free',
         banner: 'new',
         main: true
     },
     {
+        price: '514 บาท',
         name: 'หนึ่งความคิดนิจนิรันดร์ ภาค 1 เขาชื่อป๋ายเสี่ยวฉุน',
         type: 'กำลังภายใน',
         images: 'x1.jpg',
@@ -22,6 +23,7 @@ var books = [
         main: true
     },
     {
+        price: '496 บาท',
         name: 'หนึ่งความคิดนิจนิรันดร์ ภาค 2 ตำนานของเย่จั้ง',
         type: 'กำลังภายใน',
         images: 'x1.jpg',
@@ -32,6 +34,7 @@ var books = [
         main: true
     },
     {
+        price: '169 บาท',
         name: 'หนึ่งความคิดนิจนิรันดร์ ภาค 3 สยบธารลุกผงาด',
         type: 'กำลังภายใน',
         images: 'x1.jpg',
@@ -42,6 +45,7 @@ var books = [
         main: true
     },
     {
+        price: '648 บาท',
         name: 'หนึ่งความคิดนิจนิรันดร์ ภาค 4 ตัวประกันที่แตกต่าง',
         type: 'กำลังภายใน',
         images: 'x1.jpg',
@@ -52,6 +56,7 @@ var books = [
         main: true
     },
     {
+        price: 'ยังไม่จบเล่ม',
         name: 'หนึ่งความคิดนิจนิรันดร์ ภาค 5 จุดสูงสุดของชีวิต',
         type: 'กำลังภายใน',
         images: 'x1.jpg',
@@ -62,6 +67,7 @@ var books = [
         main: true
     },
     {
+        price: 'Free',
         name: 'King of Gods ราชันเทพเจ้า ภาค 1',
         type: 'กำลังภายใน',
         images: 'x2.jpg',
@@ -72,6 +78,7 @@ var books = [
         main: true
     },
     {
+        price: '108 บาท',
         name: 'King of Gods ราชันเทพเจ้า ภาค 2',
         type: 'กำลังภายใน',
         images: 'x2.jpg',
@@ -82,6 +89,7 @@ var books = [
         main: true
     },
     {
+        price: '774 บาท',
         name: 'King of Gods ราชันเทพเจ้า ภาค 3',
         type: 'กำลังภายใน',
         images: 'x2.jpg',
@@ -92,6 +100,7 @@ var books = [
         main: true
     },
     {
+        price: '410 บาท',
         name: 'King of Gods ราชันเทพเจ้า ภาค 4',
         type: 'กำลังภายใน',
         images: 'x2.jpg',
@@ -102,12 +111,13 @@ var books = [
         main: true
     },
     {
+        price: '712 บาท',
         name: 'King of Gods ราชันเทพเจ้า ภาค 5',
         type: 'กำลังภายใน',
         images: 'x2.jpg',
         folder: 'b/5/',
-        chapters: 169,
-        status: 'On going',
+        chapters: 203,
+        status: 'Complete',
         by: '主宰之王 (Zhu Zai Zhi Wang)',
         main: true
     }

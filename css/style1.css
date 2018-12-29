@@ -698,6 +698,19 @@ button:focus {
   content: 'by ';
   font-weight: normal;
 }
+
+.meta--full .meta__price {
+  display: block;
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.meta--full .meta__price::before {
+  content: 'Total price: ';
+  font-weight: normal;
+}
+
 .meta--full .meta__category {
   font-style: italic;
   float: left;
