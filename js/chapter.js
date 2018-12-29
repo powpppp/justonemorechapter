@@ -60,7 +60,7 @@ var books = [
         name: 'หนึ่งความคิดนิจนิรันดร์ ภาค 5 จุดสูงสุดของชีวิต',
         type: 'กำลังภายใน',
         images: 'x1.jpg',
-        chapters: 36,
+        chapters: 262,
         folder: 'a/5/',
         status: 'On going',
         by: 'เอ่อร์เกิน (耳根)',
