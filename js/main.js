@@ -149,7 +149,7 @@
 							contentTitle.innerHTML = all[i].replace("##", "");
 							continue;
 						}
-						var p = document.createElement("div");
+						var p = document.createElement("p");
 						if (all[i].includes("[Go To Next Chapter]")) continue;
 						p.innerHTML = all[i];
 						p.className = "txtRead";
