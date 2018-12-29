@@ -1,5 +1,17 @@
 var books = [
     {
+        name: 'ผนึกสวรรค์ สยบมาร สะท้านเทพ ภาค 1 - ปรมาจารย์เอกะเทวะ',
+        type: 'กำลังภายใน',
+        images: 'c1.jpg',
+        folder: 'c/1/',
+        chapters: 95,
+        status: 'Complete',
+        by: 'เอ่อร์เกิน (耳根)',
+        price: 'Free',
+        banner: 'new',
+        main: true
+    },
+    {
         name: 'หนึ่งความคิดนิจนิรันดร์ ภาค 1 เขาชื่อป๋ายเสี่ยวฉุน',
         type: 'กำลังภายใน',
         images: 'x1.jpg',
@@ -97,17 +109,6 @@ var books = [
         chapters: 169,
         status: 'On going',
         by: '主宰之王 (Zhu Zai Zhi Wang)',
-        main: true
-    },
-    {
-        name: 'ผนึกสวรรค์ สยบมาร สะท้านเทพ ภาค 1 - ปรมาจารย์เอกะเทวะ',
-        type: 'กำลังภายใน',
-        images: 'c1.jpg',
-        folder: 'c/1/',
-        chapters: 95,
-        status: 'Complete',
-        by: 'เอ่อร์เกิน (耳根)',
-        price: 'Free',
         main: true
     }
 ]

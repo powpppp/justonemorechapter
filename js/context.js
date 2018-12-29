@@ -20,6 +20,12 @@ Appcontext.loadBooks = function () {
 Appcontext.createBook = function (item) {
 	var a = document.createElement("a");
 	a.className = "grid__item";
+	if (item.banner) {
+		var banner = document.createElement("div");
+		banner.className = 'corner-ribbon top-left sticky red shadow'
+		banner.innerHTML = item.banner;
+		a.appendChild(banner);
+	}
 	var h2 = document.createElement("h2");
 	h2.className = "title title--preview";
 	h2.innerHTML = item.name;
