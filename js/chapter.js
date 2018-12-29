@@ -98,5 +98,16 @@ var books = [
         status: 'On going',
         by: '主宰之王 (Zhu Zai Zhi Wang)',
         main: true
+    },
+    {
+        name: 'ผนึกสวรรค์ สยบมาร สะท้านเทพ ภาค 1 - ปรมาจารย์เอกะเทวะ',
+        type: 'กำลังภายใน',
+        images: 'c1.jpg',
+        folder: 'c/1/',
+        chapters: 95,
+        status: 'Complete',
+        by: 'เอ่อร์เกิน (耳根)',
+        price: 'Free',
+        main: true
     }
 ]
