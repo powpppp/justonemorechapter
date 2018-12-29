@@ -1085,7 +1085,7 @@ button:focus {
 }
 
 .txtCenter {
-  text-align: center;
+  text-align: center !important;
 }
 
 .txtRead {
