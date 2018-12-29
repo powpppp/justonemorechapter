@@ -30,7 +30,9 @@
 		<div id="theGrid" class="main">
 			<section id="bookContainer" class="grid">
 				<header class="top-bar">
-					<h2 class="top-bar__headline">Latest books</h2>
+					<h2 class="top-bar__headline">Total worth:
+						<span style="color:red;">3,831 บาท</span>
+					</h2>
 				</header>
 				<!-- <footer class="page-meta">
 						<span>Load more...</span>
@@ -39,12 +41,12 @@
 			<section class="content">
 				<div class="scroll-wrap">
 					<article class="content__item">
-						<span id="contentMainTitle"  class="category category--full">Chapters</span>
+						<span id="contentMainTitle" class="category category--full">Chapters</span>
 						<h2 id="contentTitle" class="title title--full">Ignorance is Bliss</h2>
 						<div class="meta meta--full">
 							<img id="contentImg" width="60px" height="60px" class="meta__avatar" src="img/authors/x2.jpg" alt="author08" />
 							<span id="contentAuthor" class="meta__author">Matthew Walters</span>
-							<span id="contentPrice" class="meta__price">Free</span>
+							<!-- <span id="contentPrice" class="meta__price">Free</span> -->
 							<span class="meta__date">
 								<i class="fa fa-calendar-o"></i> 6 Apr</span>
 							<span class="meta__reading-time">
@@ -63,6 +65,15 @@
 	<!-- /container -->
 	<div id="loading" class="overlayContainer hidden">
 		<div class="catLoading abs"></div>
+	</div>
+	<div id="myModal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="closeMdl">&times;</span>
+			<p>1) <span style="color:blue;">King of Gods</span> : ......10 ดาว </p>
+			<p>2) <span style="color:blue;">ผนึกสวรรค์ สยบมาร สะท้านเทพ</span> : แต่งโดย เอ่อร์เกิน (耳根) </br>....ออกมา <span style="color:red;">10 ภาค (ภาคละ 500-700 บาท) </span>...จ๋อย </p>
+			<p>3) <span style="color:blue;">หนึ่งความคิดนิจนิรันดร์</span> : <span style="color:red;">The Hidden Gem</span> ของแท้ </br>....70 ตอนแรกแสนน่าเบื่อ จนหลายคนคิดว่า เอ่อร์เกิน (耳根) มือตก</br>....แต่เนื้อเรื่องต่อจากนั้น เอ่อร์เกิน ก็ยังคงเป็น เอ่อร์เกิน </p>
+		</div>
 	</div>
 	<script src="js/classie.js"></script>
 	<script src="js/context.js"></script>

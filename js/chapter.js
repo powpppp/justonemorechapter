@@ -120,5 +120,17 @@ var books = [
         status: 'Complete',
         by: '主宰之王 (Zhu Zai Zhi Wang)',
         main: true
+    },
+    {
+        price: 'ยังไม่จบเล่ม บาท',
+        name: 'King of Gods ราชันเทพเจ้า ภาค 6',
+        type: 'กำลังภายใน',
+        images: 'x2.jpg',
+        folder: 'b/6/',
+        chapters: 131,
+        status: 'On going',
+        banner: 'new',
+        by: '主宰之王 (Zhu Zai Zhi Wang)',
+        main: true
     }
 ]

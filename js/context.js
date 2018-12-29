@@ -1,10 +1,25 @@
 
 Appcontext = {}
+var modal = document.getElementById('myModal');
+var myModalTxt = document.getElementById('myModalTxt');
+var closeMdl = document.getElementsByClassName("closeMdl")[0];
 
 Appcontext.init = function () {
 	Appcontext._loading = document.getElementById('loading');
 	Appcontext._bookContainer = document.getElementById('bookContainer');
 	Appcontext.loadBooks();
+	Appcontext.alertMessage();
+}
+
+Appcontext.alertMessage = function () {
+	window.onclick = function (event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+	closeMdl.onclick = function() {
+		modal.style.display = "none";
+	}
 }
 
 Appcontext.loadBooks = function () {
