@@ -8,7 +8,7 @@ var books = [
         chapters: 95,
         status: 'Complete',
         by: 'เอ่อร์เกิน (耳根)',
-        banner: 'new',
+        // banner: 'new',
         main: true
     },
     {
@@ -129,7 +129,7 @@ var books = [
         folder: 'b/6/',
         chapters: 131,
         status: 'On going',
-        banner: 'new',
+        // banner: 'new',
         by: '主宰之王 (Zhu Zai Zhi Wang)',
         main: true
     }

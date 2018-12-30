@@ -12,14 +12,14 @@ Appcontext.init = function () {
 }
 
 Appcontext.alertMessage = function () {
-	window.onclick = function (event) {
-		if (event.target == modal) {
-			modal.style.display = "none";
-		}
-	}
-	closeMdl.onclick = function() {
-		modal.style.display = "none";
-	}
+	// window.onclick = function (event) {
+	// 	if (event.target == modal) {
+	// 		modal.style.display = "none";
+	// 	}
+	// }
+	// closeMdl.onclick = function() {
+	// 	modal.style.display = "none";
+	// }
 }
 
 Appcontext.loadBooks = function () {
