@@ -75,7 +75,7 @@ var books = [
         type: 'กำลังภายใน',
         images: 'x1.jpg',
         chapters: 52,
-        folder: 'a/3',
+        folder: 'a/3/',
         status: 'Complete',
         by: 'เอ่อร์เกิน (耳根)',
         main: true
