@@ -56,12 +56,23 @@ var books = [
         main: true
     },
     {
-        price: 'ยังไม่จบเล่ม',
+        price: '1100 บาท',
         name: 'หนึ่งความคิดนิจนิรันดร์ ภาค 5 จุดสูงสุดของชีวิต',
         type: 'กำลังภายใน',
         images: 'x1.jpg',
-        chapters: 262,
+        chapters: 291,
         folder: 'a/5/',
+        status: 'Complete',
+        by: 'เอ่อร์เกิน (耳根)',
+        main: true
+    },
+    {
+        price: 'ยังไม่จบเล่ม',
+        name: 'หนึ่งความคิดนิจนิรันดร์ ภาค 6 คนฟ้าที่แข็งแกร่งที่สุด',
+        type: 'กำลังภายใน',
+        images: 'x1.jpg',
+        chapters: 12,
+        folder: 'a/6/',
         status: 'On going',
         by: 'เอ่อร์เกิน (耳根)',
         main: true
@@ -127,7 +138,7 @@ var books = [
         type: 'กำลังภายใน',
         images: 'x2.jpg',
         folder: 'b/6/',
-        chapters: 131,
+        chapters: 180,
         status: 'On going',
         // banner: 'new',
         by: '主宰之王 (Zhu Zai Zhi Wang)',
