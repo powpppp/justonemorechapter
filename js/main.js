@@ -131,15 +131,9 @@
 	}
 
 	function loadEP(item, ep) {
-		gtag('event', 'click', {
-			'event_category': item.name,
-			'event_action': 'read',
-			'event_label': ep
-		});
-		gtag('event', 'read', {
+		gtag('event', 'test', {
 			'send_to': 'UA-131467716-1',
-			'event_category': item.name,
-			'event_label': ep
+			'event_label': item.name + ':' + ep
 		});
 		Appcontext.emptyNode(dataContent);
 		Appcontext.showLoading();
