@@ -133,7 +133,7 @@
 	function loadEP(item, ep) {
 		gtag('event', 'test', {
 			'send_to': 'UA-131467716-1',
-			'event_label': item.name + ':' + ep
+			'event_label': item.info.name + ':' + ep
 		});
 		Appcontext.emptyNode(dataContent);
 		Appcontext.showLoading();
