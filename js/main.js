@@ -136,11 +136,10 @@
 			'event_action': 'read',
 			'event_label': ep
 		});
-		gtag('event', 'test', {
+		gtag('event', 'read', {
 			'send_to': 'UA-131467716-1',
-			'parameter1': 'value1',
-			'parameter2': 'value2',
-			// ...
+			'event_category': item.name,
+			'event_label': ep
 		});
 		Appcontext.emptyNode(dataContent);
 		Appcontext.showLoading();
