@@ -136,6 +136,12 @@
 			'event_action': 'read',
 			'event_label': ep
 		});
+		gtag('event', 'test', {
+			'send_to': 'UA-131467716-1',
+			'parameter1': 'value1',
+			'parameter2': 'value2',
+			// ...
+		});
 		Appcontext.emptyNode(dataContent);
 		Appcontext.showLoading();
 		var xhr = new XMLHttpRequest();
