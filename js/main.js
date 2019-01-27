@@ -131,7 +131,11 @@
 	}
 
 	function loadEP(item, ep) {
-		ga('send', 'event', [item.name], ['read'], [ep], [1], []);
+		gtag('event', 'click', {
+			'event_category': item.name,
+			'event_action': 'read',
+			'event_label': ep
+		});
 		Appcontext.emptyNode(dataContent);
 		Appcontext.showLoading();
 		var xhr = new XMLHttpRequest();
@@ -192,7 +196,7 @@
 		if (contentPrice) {
 			contentPrice.innerHTML = item.info.price;
 		}
-		
+
 		Appcontext.emptyNode(dataContent);
 		for (var i = 1; i <= item.info.chapters; i++) {
 			var p = document.createElement("p");
