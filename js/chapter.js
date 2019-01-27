@@ -25,6 +25,18 @@ var books = [
     },
     {
         price: 'Free',
+        name: 'ฉันนี่แหละคือซูเปอร์สตาร์ ภาค 3',
+        type: 'แฟนตาซี',
+        images: 'd1.jpg',
+        folder: 'd/3/',
+        chapters: 100,
+        status: 'Complete',
+        by: 'ฉางอวี้ (尝谕)',
+        // banner: 'new',
+        main: true
+    },
+    {
+        price: 'Free',
         name: 'ผนึกสวรรค์ สยบมาร สะท้านเทพ ภาค 1 - ปรมาจารย์เอกะเทวะ',
         type: 'กำลังภายใน',
         images: 'c1.jpg',
