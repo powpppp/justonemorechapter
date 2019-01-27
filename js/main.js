@@ -131,10 +131,6 @@
 	}
 
 	function loadEP(item, ep) {
-		gtag('event', 'test', {
-			'send_to': 'UA-131467716-1',
-			'event_label': item.info.name + ':' + ep
-		});
 		gtag('event', 'track', {
 			'send_to': 'UA-131467716-1',
 			'event_label': item.info.name + ':' + ep
