@@ -198,7 +198,7 @@ var books = [
         type: 'กำลังภายใน',
         images: 'x2.jpg',
         folder: 'b/6/',
-        chapters: 180,
+        chapters: 276,
         status: 'On going',
         // banner: 'new',
         by: '主宰之王 (Zhu Zai Zhi Wang)',
