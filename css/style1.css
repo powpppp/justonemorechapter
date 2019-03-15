@@ -812,7 +812,7 @@ button:focus {
   margin: 0;
   z-index: 100;
   top: 0;
-  right: 0;
+  right: 15px;
   font-size: 18px;
   color: #ddd;
   cursor: pointer;
