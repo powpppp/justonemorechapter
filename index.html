@@ -2,78 +2,80 @@
 <html lang="en" class="no-js">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Grid Item Animation Layout - Demo 1</title>
-	<meta name="description" content="A responsive, magazine-like website layout with a grid item animation effect when opening the content"
-	/>
-	<meta name="keywords" content="grid, layout, effect, animated, responsive, magazine, template, web design" />
-	<meta name="author" content="Codrops" />
-	<link rel="shortcut icon" href="../favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" type="text/css" href="css/style1.css?version=1.5" />
-	<!-- <link rel="preload" href="fonts/thongterm/thongterm_bold.ttf" as="font" crossorigin="crossorigin">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grid Item Animation Layout - Demo 1</title>
+    <meta name="description" content="A responsive, magazine-like website layout with a grid item animation effect when opening the content" />
+    <meta name="keywords" content="grid, layout, effect, animated, responsive, magazine, template, web design" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css?version=1.5" />
+    <!-- <link rel="preload" href="fonts/thongterm/thongterm_bold.ttf" as="font" crossorigin="crossorigin">
 	<link rel="preload" href="fonts/thongterm/thongterm_bold.woff" as="font" crossorigin="crossorigin"> -->
-	<!-- <link rel="preload" href="fonts/thongterm/thongterm_light.ttf" as="font" crossorigin="crossorigin">
+    <!-- <link rel="preload" href="fonts/thongterm/thongterm_light.ttf" as="font" crossorigin="crossorigin">
 	<link rel="preload" href="fonts/thongterm/thongterm_light.woff" as="font" crossorigin="crossorigin"> -->
-	<script src="js/modernizr.custom.js"></script>
-	<script src="js/chapter.js?version=7.4135"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131467716-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/chapter.js?version=3.1735"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131467716-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-		gtag('config', 'UA-131467716-1');
-	</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131467716-1');
+    </script>
 </head>
 
 <body>
-	<div class="container">
-		<button id="menu-toggle" class="menu-toggle">
+    <div class="container">
+        <button id="menu-toggle" class="menu-toggle">
 			<span>Menu</span>
 		</button>
-		<div id="theGrid" class="main">
-			<section id="bookContainer" class="grid">
-				<header class="top-bar">
-					<h2 class="top-bar__headline">My journey through life, half of them is here.</h2>
-				</header>
-				<!-- <footer class="page-meta">
+        <div id="theGrid" class="main">
+            <section id="bookContainer" class="grid">
+                <header class="top-bar">
+                    <h2 class="top-bar__headline">My journey through life, half of them is here.</h2>
+                </header>
+                <!-- <footer class="page-meta">
 						<span>Load more...</span>
 					</footer> -->
-			</section>
-			<section class="content">
-				<div class="scroll-wrap">
-					<article class="content__item">
-						<span id="contentMainTitle" class="category category--full">Chapters</span>
-						<h2 id="contentTitle" class="title title--full">Ignorance is Bliss</h2>
-						<div class="meta meta--full">
-							<img id="contentImg" width="60px" height="60px" class="meta__avatar" src="img/authors/x2.jpg" alt="author08" />
-							<span id="contentAuthor" class="meta__author">Matthew Walters</span>
-							<!-- <span id="contentPrice" class="meta__price">Free</span> -->
-							<span class="meta__date">
+            </section>
+            <section class="content">
+                <div class="scroll-wrap">
+                    <article class="content__item">
+                        <span id="contentMainTitle" class="category category--full">Chapters</span>
+                        <h2 id="contentTitle" class="title title--full">Ignorance is Bliss</h2>
+                        <div class="meta meta--full">
+                            <img id="contentImg" width="60px" height="60px" class="meta__avatar" src="img/authors/x2.jpg" alt="author08" />
+                            <span id="contentAuthor" class="meta__author">Matthew Walters</span>
+                            <!-- <span id="contentPrice" class="meta__price">Free</span> -->
+                            <span class="meta__date">
 								<i class="fa fa-calendar-o"></i> 6 Apr</span>
-							<span class="meta__reading-time">
+                            <span class="meta__reading-time">
 								<i class="fa fa-clock-o"></i> 2 min read</span>
-						</div>
-						<div id="dataContent"></div>
-					</article>
-				</div>
-				<button class="close-button">
+                        </div>
+                        <div id="dataContent"></div>
+                    </article>
+                </div>
+                <button class="close-button">
 					<i class="fa fa-close"></i>
 					<span>Close</span>
 				</button>
-			</section>
-		</div>
-	</div>
-	<!-- /container -->
-	<div id="loading" class="overlayContainer hidden">
-		<div class="catLoading abs"></div>
-	</div>
-	<!-- <div id="myModal" class="modal">
+            </section>
+        </div>
+    </div>
+    <!-- /container -->
+    <div id="loading" class="overlayContainer hidden">
+        <div class="catLoading abs"></div>
+    </div>
+    <!-- <div id="myModal" class="modal">
 		<div class="modal-content">
 			<span class="closeMdl">&times;</span>
 			<p>1)
@@ -86,9 +88,9 @@
 				<span style="color:red;">The Hidden Gem</span> ของแท้ </br>....70 ตอนแรกแสนน่าเบื่อ จนหลายคนคิดว่า เอ่อร์เกิน (耳根) มือตก แต่เนื้อเรื่องต่อจากนั้น....</br>
 		</div>
 	</div> -->
-	<script src="js/classie.js"></script>
-	<script src="js/context.js"></script>
-	<script src="js/main.js?version=11.95"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/context.js"></script>
+    <script src="js/main.js?version=11.95"></script>
 </body>
 
 </html>

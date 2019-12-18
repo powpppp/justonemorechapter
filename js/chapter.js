@@ -1,5 +1,4 @@
-﻿var books = [
-    {
+﻿var books = [{
         price: 'Free',
         name: 'ฉันนี่แหละคือซูเปอร์สตาร์ ภาค 1',
         type: 'แฟนตาซี',
@@ -131,9 +130,9 @@
         name: 'หนึ่งความคิดนิจนิรันดร์ ภาค 6 คนฟ้าที่แข็งแกร่งที่สุด',
         type: 'กำลังภายใน',
         images: 'x1.jpg',
-        chapters: 95,
+        chapters: 189,
         folder: 'a/6/',
-        status: 'On going',
+        status: 'Complete',
         by: 'เอ่อร์เกิน (耳根)',
         main: true
     },
