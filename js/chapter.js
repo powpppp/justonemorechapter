@@ -126,12 +126,23 @@
         main: true
     },
     {
-        price: 'ยังไม่จบเล่ม',
+        price: '900 บาท',
         name: 'หนึ่งความคิดนิจนิรันดร์ ภาค 6 คนฟ้าที่แข็งแกร่งที่สุด',
         type: 'กำลังภายใน',
         images: 'x1.jpg',
         chapters: 189,
         folder: 'a/6/',
+        status: 'Complete',
+        by: 'เอ่อร์เกิน (耳根)',
+        main: true
+    },
+    {
+        price: '1400 บาท',
+        name: 'หนึ่งความคิดนิจนิรันดร์ ภาค 7 ดินแดนเซียนนิรันดร์กาล',
+        type: 'กำลังภายใน',
+        images: 'x1.jpg',
+        chapters: 289,
+        folder: 'a/7/',
         status: 'Complete',
         by: 'เอ่อร์เกิน (耳根)',
         main: true
