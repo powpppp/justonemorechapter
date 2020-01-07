@@ -1,5 +1,29 @@
 ﻿var books = [{
         price: 'Free',
+        name: 'Release That Witch ปล่อยแม่มดคนนั้นซะ ภาค 1',
+        type: 'สร้างเมือง',
+        images: 'r1.jpg',
+        folder: 'e/1/',
+        chapters: 88,
+        status: 'Complete',
+        by: 'เอ่อร์มู่ (二目)',
+        banner: 'new',
+        main: true
+    },
+    {
+        price: 'Free',
+        name: 'Release That Witch ปล่อยแม่มดคนนั้นซะ ภาค 2',
+        type: 'สร้างเมือง',
+        images: 'r1.jpg',
+        folder: 'e/2/',
+        chapters: 385,
+        status: 'Complete',
+        by: 'เอ่อร์มู่ (二目)',
+        banner: 'new',
+        main: true
+    },
+    {
+        price: 'Free',
         name: 'ฉันนี่แหละคือซูเปอร์สตาร์ ภาค 1',
         type: 'แฟนตาซี',
         images: 'd1.jpg',
