@@ -7,7 +7,7 @@
         chapters: 88,
         status: 'Complete',
         by: 'เอ่อร์มู่ (二目)',
-        banner: 'new',
+        // banner: 'new',
         main: true
     },
     {
@@ -19,7 +19,7 @@
         chapters: 385,
         status: 'Complete',
         by: 'เอ่อร์มู่ (二目)',
-        banner: 'new',
+        // banner: 'new',
         main: true
     },
     {
@@ -128,6 +128,18 @@
         status: 'Complete',
         by: 'ฉางอวี้ (尝谕)',
         // banner: 'new',
+        main: true
+    },
+    {
+        price: 'Free',
+        name: 'ฉันนี่แหละคือซูเปอร์สตาร์ ภาค 10',
+        type: 'แฟนตาซี',
+        images: 'd1.jpg',
+        folder: 'd/10/',
+        chapters: 129,
+        status: 'On going',
+        by: 'ฉางอวี้ (尝谕)',
+        banner: 'new',
         main: true
     },
     {
@@ -275,14 +287,26 @@
         main: true
     },
     {
-        price: 'ยังไม่จบเล่ม บาท',
+        price: 'XX บาท',
         name: 'King of Gods ราชันเทพเจ้า ภาค 6',
         type: 'กำลังภายใน',
         images: 'x2.jpg',
         folder: 'b/6/',
-        chapters: 276,
-        status: 'On going',
+        chapters: 381,
+        status: 'Complete',
         // banner: 'new',
+        by: '主宰之王 (Zhu Zai Zhi Wang)',
+        main: true
+    },
+    {
+        price: 'XX บาท',
+        name: 'King of Gods ราชันเทพเจ้า ภาค 7',
+        type: 'กำลังภายใน',
+        images: 'x2.jpg',
+        folder: 'b/7/',
+        chapters: 441,
+        status: 'Complete',
+        banner: 'new',
         by: '主宰之王 (Zhu Zai Zhi Wang)',
         main: true
     }
