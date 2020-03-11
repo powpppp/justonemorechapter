@@ -136,7 +136,7 @@
         type: 'แฟนตาซี',
         images: 'd1.jpg',
         folder: 'd/10/',
-        chapters: 129,
+        chapters: 181,
         status: 'On going',
         by: 'ฉางอวี้ (尝谕)',
         banner: 'new',
