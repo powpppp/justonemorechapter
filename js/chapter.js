@@ -311,4 +311,16 @@
     by: "主宰之王 (Zhu Zai Zhi Wang)",
     main: true,
   },
+  {
+    price: "Free",
+    name: "ท้าลิขิตพลิกโชคชะตา",
+    type: "กำลังภายใน",
+    images: "f1.jpeg",
+    folder: "f/1/",
+    chapters: 948,
+    status: "On going",
+    by: "猫腻 (เมานี่)",
+    banner: "new",
+    main: true,
+  }
 ];
